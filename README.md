@@ -17,9 +17,9 @@ Você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 [Git](https://git-scm.com), [Node.js][nodejs] e o [Docker].
 
 E das seguintes extensões também!
-[vceditconfig]: https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
-[vceslint]: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
-[prettier]: https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+[EditorConfig for VS Code][vceditconfig] |
+[ESlint][vceslint] |
+[Prettier][prettier]
 
 ### 🎲 Rodando o Back End (servidor)
 
