@@ -17,11 +17,18 @@ class CustomerRepository implements ICustomerRepository {
         id,
     }: ICreateCustomerDTO): Promise<Customer> {
         const newCustomer = new Customer();
-        Object.assign(newCustomer, { name, document, id });
+
+        if (id) {
+            newCustomer.id = id;
+        }
+
+        Object.assign(newCustomer, { name, document });
+
         await setRedis(
             `customer:${newCustomer.id}`,
             JSON.stringify(newCustomer),
         );
+
         return newCustomer;
     }
     update(data: ICreateCustomerDTO): Promise<Customer> {
