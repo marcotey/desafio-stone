@@ -35,10 +35,15 @@ $ docker-compose up -d
 # Os testes podem ser feitos localmente por questões de conexão entre o jest e o redis dentro do container.
 
 # Para tanto, é necessário instalar todas as dependências do projeto.
+$ npm install -g yarn
+
+# Depois executa o comando abaixo para instalar as dependências.
 $ yarn
 
 # Depois basta executar o comando abaixo para executar a suit de testes do jest.
 $ yarn test
+
+# Caso seja necessário, atualize a versão do node.
 ```
 
 ### Observações sobre a autenticação
